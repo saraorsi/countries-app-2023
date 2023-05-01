@@ -1,0 +1,62 @@
+.country {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1.5rem;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.flag {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.name {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2rem;
+}
+
+
+.info {
+    border-top: 2px solid var(--color);
+    display: flex;
+    align-items: center;
+    padding: .75rem 0;
+}
+
+
+.info>div:nth-child(1) {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.5rem;
+    flex: 0 0 60%;
+}
+
+.map {
+    display: block;
+    height: 3.5rem;
+    margin-top: 1rem;
+    border: 2px solid var(--color);
+    border-radius: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.5rem;
+    transition: background-color .3s;
+}
+
+.map:hover {
+    background-color: var(--green);
+}
+
+@media (max-width: 900px) {
+    .country {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Chakra Petch', sans-serif;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.container input {
+    background: transparent;
+    border: 2px solid var(--color);
+    font-family: 'Chakra Petch', sans-serif;
+    padding: .25rem .5rem;
+    font-size: 1rem;
+
+}
+
+.container input::placeholder {
+    color: var(--color);
+}
